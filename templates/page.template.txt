@@ -1,0 +1,75 @@
+# Zugzwang Project
+# deutsche-schachjugend.de
+# Copyright (c) 2016-2021 Gustaf Mossakowski <gustaf@koenige.org>
+# Copyright (c) 2020      Falco Nogatz <fnogatz@gmail.com>
+# HTML-Ausgabe: Komplette Webseite
+#
+%%% block default logo %%%
+<p class="logo-wide"><a href="/" target="_top"><img src="/_layout/logo-60.png" alt="DSJ" srcset="/_layout/logo-60.png 1x, /_layout/logo-120.png 2x"></a></p>
+%%% block default end %%%
+
+<!DOCTYPE html>
+<html lang="%%% page lang %%%">
+<head>
+	<title>%%% page pagetitle %%%</title>
+	<link rel="stylesheet" type="text/css" href="/_layout/schachin/tournament.css%%% page nocache %%%">
+	<link rel="stylesheet" type="text/css" href="/_layout/schachin/dsj.css%%% page nocache %%%">
+%%% block css %%%
+	<link rel="icon" href="/favicon.ico" type="image/x-ico">
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+%%% condition if page description %%%
+	<meta name="description" content="%%% page description %%%">
+%%% condition endif %%%
+%%% page head %%%
+</head>
+<body class="%%% page realm %%%"%%% page extra_body_attributes " %s" %%%>
+<div id="full">
+<header><div id="head">
+%%% block logo %%%
+<nav>
+<ul id="nav" class="nav">
+%%% page nav %%%
+</ul>
+<p id="breadcrumbs">%%% page breadcrumbs %%%</p>
+</nav>
+</div>
+<div id="banner">
+<div class="banner" id="bannermap">
+%%% page bannertext %%%
+</div>
+</div>
+%%% page turniermenue %%%
+</header>
+<div id="content">
+<div class="text%%% page extra_wide " wide"%%%" role="main">
+%%% page text %%%
+</div>
+</div>
+<footer>
+<div id="foot">
+<div class="foot">
+<span class="dsj"><a href="%%% page dsjbase %%%/" target="_top">Deutsche Schachjugend</a> &nbsp;&middot;&nbsp; </span><a href="%%% page dsjbase %%%/dsj-inside/organisation/impressum/" target="_top">Impressum</a> &nbsp;&middot;&nbsp; <a href="https://www.deutsche-schachjugend.de/dsj-inside/organisation/datenschutz/" target="_top">Datenschutz</a> &nbsp;&middot;&nbsp; <a href="/kontakt/" target="_top">Kontakt</a>
+%%% block foot %%%
+%%% page angemeldet " &nbsp;&middot;&nbsp; Angemeldet als: <strong>%s</strong> &middot; <a href='/logout/' target='_top'>Abmelden</a>" %%%
+</div>
+</div>
+</footer>
+</div>
+%%% condition unless login %%%
+%%% condition unless angemeldet %%%
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-5538920-%%% condition if page dsjbase %%%11%%% condition else %%%3%%% condition endif %%%']);
+_gaq.push(['_gat._anonymizeIp']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+%%% condition endif %%%
+%%% condition endif %%%
+</body>
+</html>
