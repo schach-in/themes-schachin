@@ -1,7 +1,7 @@
 /*
  * Zugzwang Project
  * deutsche-schachjugend.de
- * Copyright (c) 2016-2018 Gustaf Mossakowski <gustaf@koenige.org>
+ * Copyright (c) 2016-2018, 2022 Gustaf Mossakowski <gustaf@koenige.org>
  * Copyright (c) 2020      Falco Nogatz <fnogatz@gmail.com>
  * CSS for everything else
  */
@@ -9,16 +9,16 @@
 
 @font-face	{ font-family: 'Fira Sans'; font-style: normal; font-weight: 400;
 			src: local('Fira Sans'), local('FiraSans-Regular'),
-			url(/_layout/fonts/FiraSans-Regular.woff2) format('woff2'),
-			url(/_layout/fonts/FiraSans-Regular.woff) format('woff'); }
+			url(%%% setting layout_path %%%/schachin/fonts/FiraSans-Regular.woff2) format('woff2'),
+			url(%%% setting layout_path %%%/schachin/fonts/FiraSans-Regular.woff) format('woff'); }
 @font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 700;
 			src: local('Fira Sans Bold'), local('FiraSans-Bold'),
-			url(/_layout/fonts/FiraSans-Bold.woff2) format('woff2'),
-			url(/_layout/fonts/FiraSans-Bold.woff) format('woff'); }
+			url(%%% setting layout_path %%%/schachin/fonts/FiraSans-Bold.woff2) format('woff2'),
+			url(%%% setting layout_path %%%/schachin/fonts/FiraSans-Bold.woff) format('woff'); }
 @font-face { font-family: 'Fira Sans'; font-style: italic; font-weight: 400;
 			src: local('Fira Sans Italic'), local('FiraSans-Italic'),
-			url(/_layout/fonts/FiraSans-Italic.woff2) format('woff2'),
-			url(/_layout/fonts/FiraSans-Italic.woff) format('woff'); }
+			url(%%% setting layout_path %%%/schachin/fonts/FiraSans-Italic.woff2) format('woff2'),
+			url(%%% setting layout_path %%%/schachin/fonts/FiraSans-Italic.woff) format('woff'); }
 
 html, body	{ height: 100%; width: 100%; }
 body		{ background: white; color: black; margin: 0; padding: 0; 
@@ -759,25 +759,4 @@ body .results tbody td.reselect
 	td p		{ padding: 0 0; }
 	p.teamphoto, p.logo-top, p#breadcrumbs, p.date, .costs p, p.logo-wide
 				{ padding: 0; }
-}
-
-
-/* schach-vereinsberatung.de */
-
-.beratung div.text #zzform
-				{ padding: 0; }
-.beratung #zzform .separator p
-				{ padding: .25em .5em; line-height: 1.3; }
-.beratung #zzform #record
-				{ max-width: 600px; }
-.rahmenbedingungen dt, .rahmenbedingungen dd
-				{ border-top: 1px dotted #CCC; padding-top: .5em; }
-.rahmenbedingungen dt
-				{ width: 5em; float: left; clear: left; margin: 0; }
-.rahmenbedingungen dd
-				{ margin: .5em 0 .5em 6em; }
-
-@media screen and (min-width: 640px) {
-	.rahmenbedingungen ul
-				{ column-count: 2; column-gap: 1em; }
 }
