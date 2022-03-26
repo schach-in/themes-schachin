@@ -24,3 +24,8 @@
 			{ content: " \00a0·\00a0\00a0"; }
 #foot nav li:first-child:before
 			{ content: ""; }
+
+/* custom pages */
+
+.login fieldset, .login legend
+			{ background: #FC0; }
