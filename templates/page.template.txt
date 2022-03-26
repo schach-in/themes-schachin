@@ -50,9 +50,16 @@
 <footer>
 <div id="foot">
 <div class="foot">
-<span class="dsj"><a href="%%% page dsjbase %%%/" target="_top">Deutsche Schachjugend</a> &nbsp;&middot;&nbsp; </span><a href="%%% page dsjbase %%%/dsj-inside/organisation/impressum/" target="_top">Impressum</a> &nbsp;&middot;&nbsp; <a href="https://www.deutsche-schachjugend.de/dsj-inside/organisation/datenschutz/" target="_top">Datenschutz</a> &nbsp;&middot;&nbsp; <a href="/kontakt/" target="_top">Kontakt</a>
+<nav>
+<ul>
+%%% page nav_bottom %%%
 %%% block foot %%%
-%%% page angemeldet " &nbsp;&middot;&nbsp; Angemeldet als: <strong>%s</strong> &middot; <a href='/logout/' target='_top'>Abmelden</a>" %%%
+%%% condition if page angemeldet %%%
+<li>Angemeldet als: <strong>%%% page angemeldet %%%</strong></li>
+<li><a href='/logout/' target='_top'>Abmelden</a></li>
+%%% condition endif %%%
+</ul>
+</nav>
 </div>
 </div>
 </footer>
