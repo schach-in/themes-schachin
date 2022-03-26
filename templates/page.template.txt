@@ -5,7 +5,7 @@
 # HTML-Ausgabe: Komplette Webseite
 #
 %%% block default logo %%%
-<p class="logo-wide"><a href="/" target="_top"><img src="/_layout/logo-60.png" alt="DSJ" srcset="/_layout/logo-60.png 1x, /_layout/logo-120.png 2x"></a></p>
+<p class="logo-top"><a href="/" target="_top"><img src="/_layout/clubs/logo-schachvereine-60.png" alt="Schachvereine"  srcset="/_layout/clubs/logo-schachvereine-60.png 1x, /_layout/clubs/logo-schachvereine-120.png 2x"></a></p>
 %%% block default end %%%
 
 <!DOCTYPE html>
