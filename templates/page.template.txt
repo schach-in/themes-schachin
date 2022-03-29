@@ -54,9 +54,9 @@
 <ul>
 %%% page nav_bottom %%%
 %%% block foot %%%
-%%% condition if page angemeldet %%%
-<li>Angemeldet als: <strong>%%% page angemeldet %%%</strong></li>
-<li><a href='/logout/' target='_top'>Abmelden</a></li>
+%%% condition if page loggedin %%%
+<li>Angemeldet als: <strong>%%% page loggedin %%%</strong></li>
+%%% page nav_internal %%%
 %%% condition endif %%%
 </ul>
 </nav>
