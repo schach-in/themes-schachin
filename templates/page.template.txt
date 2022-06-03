@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="/_layout/schachin/tournament.css%%% page nocache %%%">
 	<link rel="stylesheet" type="text/css" href="/_layout/schachin/dsj.css%%% page nocache %%%">
 	<link rel="stylesheet" type="text/css" href="/_layout/schachin/schachin.css%%% page nocache %%%">
+	<link rel="stylesheet" type="text/css" href="/_layout/ratings/ratings.css%%% page nocache %%%">
 %%% block css %%%
 	<link rel="icon" href="/favicon.ico" type="image/x-ico">
 	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" type="image/png">
