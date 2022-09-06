@@ -13,7 +13,6 @@
 <head>
 	<title>%%% page pagetitle %%%</title>
 	<link rel="stylesheet" type="text/css" href="/_layout/schachin/tournament.css%%% page nocache %%%">
-	<link rel="stylesheet" type="text/css" href="/_layout/schachin/dsj.css%%% page nocache %%%">
 	<link rel="stylesheet" type="text/css" href="/_layout/schachin/schachin.css%%% page nocache %%%">
 	<link rel="stylesheet" type="text/css" href="/_layout/ratings/ratings.css%%% page nocache %%%">
 %%% block css %%%
