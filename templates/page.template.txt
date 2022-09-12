@@ -1,68 +1,16 @@
-# Zugzwang Project
-# deutsche-schachjugend.de
-# Copyright (c) 2016-2022 Gustaf Mossakowski <gustaf@koenige.org>
-# Copyright (c) 2020      Falco Nogatz <fnogatz@gmail.com>
-# HTML-Ausgabe: Komplette Webseite
+# schachin theme
+# page template
 #
-%%% block default logo %%%
-<p class="logo-top"><a href="/" target="_top"><img src="/_layout/clubs/logo-schachvereine-60.png" alt="Schachvereine"  srcset="/_layout/clubs/logo-schachvereine-60.png 1x, /_layout/clubs/logo-schachvereine-120.png 2x"></a></p>
-%%% block default end %%%
+# Part of »Zugzwang Project«
+# https://www.zugzwang.org/themes/schachin
+#
+# @author Gustaf Mossakowski <gustaf@koenige.org>
+# @copyright Copyright © 2016-2022 Gustaf Mossakowski
+# Copyright (c) 2020      Falco Nogatz <fnogatz@gmail.com>
+# @license http://opensource.org/licenses/lgpl-3.0.html LGPL-3.0
+#
+%%% block definition logo %%%
+<p class="logo-top"><a href="%%% setting homepage_url %%%" target="_top"><img src="%%% setting layout_path %%%/clubs/logo-schachvereine-60.png" alt="Schachvereine"  srcset="%%% setting layout_path %%%/clubs/logo-schachvereine-60.png 1x, /_layout/clubs/logo-schachvereine-120.png 2x"></a></p>
+%%% block definition end %%%
 
-<!DOCTYPE html>
-<html lang="%%% page lang %%%">
-<head>
-	<title>%%% page pagetitle %%%</title>
-	<link rel="stylesheet" type="text/css" href="/_layout/schachin/tournament.css%%% page nocache %%%">
-	<link rel="stylesheet" type="text/css" href="/_layout/schachin/schachin.css%%% page nocache %%%">
-	<link rel="stylesheet" type="text/css" href="/_layout/ratings/ratings.css%%% page nocache %%%">
-%%% block css %%%
-	<link rel="icon" href="/favicon.ico" type="image/x-ico">
-	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png" type="image/png">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-%%% condition if page description %%%
-	<meta name="description" content="%%% page description %%%">
-%%% condition endif %%%
-%%% page head %%%
-</head>
-<body class="clubs"%%% page extra_body_attributes " %s" %%%>
-<div id="full">
-<header><div id="head">
-%%% block logo %%%
-<nav>
-<ul id="nav" class="nav">
-%%% page nav %%%
-</ul>
-<p id="breadcrumbs">%%% page breadcrumbs %%%</p>
-</nav>
-</div>
-<div id="banner">
-<div class="banner" id="bannermap">
-%%% page bannertext %%%
-</div>
-</div>
-%%% page turniermenue %%%
-</header>
-<div id="content">
-<div class="text%%% page extra_wide " wide"%%%" role="main">
-%%% page text %%%
-</div>
-</div>
-<footer>
-<div id="foot">
-<div class="foot">
-<nav>
-<ul>
-%%% page nav_bottom %%%
-%%% block foot %%%
-%%% condition if page loggedin %%%
-<li>Angemeldet als: <strong>%%% page loggedin %%%</strong></li>
-%%% page nav_internal %%%
-%%% condition endif %%%
-</ul>
-</nav>
-</div>
-</div>
-</footer>
-</div>
-</body>
-</html>
+%%% include chess16/page %%%
