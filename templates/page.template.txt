@@ -5,12 +5,12 @@
 # https://www.zugzwang.org/themes/schachin
 #
 # @author Gustaf Mossakowski <gustaf@koenige.org>
-# @copyright Copyright © 2016-2022 Gustaf Mossakowski
+# @copyright Copyright © 2016-2023 Gustaf Mossakowski
 # Copyright (c) 2020      Falco Nogatz <fnogatz@gmail.com>
 # @license http://opensource.org/licenses/lgpl-3.0.html LGPL-3.0
 #
 %%% block definition logo %%%
-<p class="logo-top"><a href="%%% setting homepage_url %%%" target="_top"><img src="%%% setting layout_path %%%/clubs/logo-schachvereine-60.png" alt="Schachvereine"  srcset="%%% setting layout_path %%%/clubs/logo-schachvereine-60.png 1x, /_layout/clubs/logo-schachvereine-120.png 2x"></a></p>
+<p class="logo-top"><a href="%%% setting homepage_url %%%" target="_top"><img src="%%% setting layout_path %%%/schachin/logo-schachvereine-60.png" alt="Schachvereine"  srcset="%%% setting layout_path %%%/schachin/logo-schachvereine-60.png 1x, %%% setting layout_path %%%/schachin/logo-schachvereine-120.png 2x"></a></p>
 %%% block definition end %%%
 
 %%% include chess16/page %%%
