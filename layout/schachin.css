@@ -35,3 +35,8 @@
 /* custom pages */
 .login fieldset, .login legend
 			{ background: #FC0; }
+
+/* ratinglist.template.txt */
+
+.ratings .memberships
+			{ font-size: .85rem; }
