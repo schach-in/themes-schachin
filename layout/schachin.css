@@ -27,16 +27,19 @@
 /* page.template.txt */
 .logo-right	{ float: right; padding: .25em 0 0 .25em; }
 
+
 /* top of page */
 .banner		{ background: #FC0 url(/_layout/schachin/bg-schachin.png);
 			background-position: 50% 50%; background-repeat: no-repeat;
 			background-size: auto 100%; }
 
+
 /* custom pages */
 .login fieldset, .login legend
 			{ background: #FC0; }
 
-/* ratinglist.template.txt */
 
+/* ratinglist.template.txt */
 .ratings .memberships
 			{ font-size: .85rem; }
+
