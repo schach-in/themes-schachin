@@ -43,3 +43,8 @@
 .ratings .memberships
 			{ font-size: .85rem; }
 
+
+/* login */
+%%% include default/layout/login.css %%%
+.logintext		{ float: none; max-width: none; padding: 0; }
+
